@@ -1,5 +1,8 @@
-const forgotPass = document.getElementById("asignPassword")
-console.log(forgotPass)
-forgotPass.addEventListener("click", () => {
-    document.querySelector(".modal-wrapper").classList.toggle("show-modal")
-} )
+const asignModal = document.querySelectorAll("[data-modal-control]")
+for(let i = 0; i < asignModal.length; i++){
+    asignModal[i].addEventListener("click", ()=>{
+        let modal = asignModal[i].getAttribute("data-modal-control")
+        document.getElementById(modal).classList.toggle("show-modal")
+    })
+}
+

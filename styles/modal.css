@@ -3,17 +3,19 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-   
 }
 
 .show-modal {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(00, 00, 00, 0.5);
     top: 0;
     z-index: 1;
-}
+    animation: fadeInModal 1s linear;
+    }
 
 .modal {
     display: flex;
@@ -26,3 +28,22 @@
     border-radius: 8px;
 }
 
+.show-modal .modal {
+    animation: moveModal 1s ease;
+}
+
+@keyframes moveModal { 
+    0%{transform: translateY(-70%);
+    opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity:1
+    }
+}
+
+@keyframes fadeInModal {
+    0% {opacity:0}
+    100% {opacity: 1}
+}

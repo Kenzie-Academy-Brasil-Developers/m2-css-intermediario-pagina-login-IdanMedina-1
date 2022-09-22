@@ -23,13 +23,13 @@
         <h2>Login</h2>
         <input type="email" placeholder="E-mail" />
         <input type="password" placeholder="Senha" />
-        <p  id="asignPassword">Esqueci a minha senha</p>
+        <p data-modal-control="asign">Esqueci a minha senha</p>
         <button type="submit">Submit</button>
       </form>
     </main>
-    <div class="modal-wrapper">
+    <div class="modal-wrapper" id="asign">
     <form class="modal">
-      <h3>Recuperar senha <span class="modal-close">X</span></h3>
+      <h3>Recuperar senha <span class="modal-close" data-modal-control="asign">X</span></h3>
       <p>Digite o seu e-mail abaixo para cadastrar uma nova senha</p>
       <input type="email" placeholder="E-mail" />
       <button type="submit">Submit</button>
