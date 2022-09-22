@@ -1,0 +1,39 @@
+.title {
+  color: var(--color-primary);
+  font-weight: 700;
+  margin: 112px 0 28px 43px
+}
+
+.login-formulary h2 {
+  color: var(--color-grey-1);
+  margin: 80px 0 28px 76px;
+}
+
+.login-formulary p {
+    font-size: small;
+    text-align: right;
+    margin-bottom: 34px;
+    margin-right: 77px;
+    cursor:pointer;
+}
+
+.trademark p {
+  color: var(--color-grey-6);
+  margin-left: 43px;
+  margin-right: 77px;
+  gap: 16px;
+  margin-right: 47px;
+}
+
+.modal h3 {
+    margin-left: 22px;
+    margin-bottom: 44px;
+    color: var(--color-grey-3);
+
+    display: flex;
+  }
+  .modal p {
+    margin-left: 22px;
+    margin-bottom: 36px;
+    color: var(--color-grey-3);
+  }

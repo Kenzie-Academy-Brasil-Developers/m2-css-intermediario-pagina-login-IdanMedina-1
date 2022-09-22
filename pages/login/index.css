@@ -1,1 +1,25 @@
-/* Desenvolva seu código aqui... */
+.container {
+    position: relative;
+    width: 714px;
+    height: 407px;
+    top: 25vh;
+    margin: 0 auto;
+    border-radius: 8px;
+    display: flex;
+    box-shadow: 3px 4px 5px var(--color-grey-3) ;
+}
+
+.trademark {
+    background-color: var(--color-grey-4);
+    width: 46%;
+    border-radius: 8px 0 0px 8px;
+}
+
+
+.login-formulary {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary);
+    width: 54%;
+    border-radius: 0 8px 8px 0;
+}

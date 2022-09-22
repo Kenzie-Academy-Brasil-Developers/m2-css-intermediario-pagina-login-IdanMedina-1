@@ -1,14 +1,40 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/globalStyles.css">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../styles/modal.css" />
+    <link rel="stylesheet" href="../../styles/text.css" />
+    <link rel="stylesheet" href="../../styles/input.css" />
+    <link rel="stylesheet" href="../../styles/button.css" />
+    <link rel="stylesheet" href="../../styles/globalStyles.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>Login</title>
-</head>
-<body>
-    <script src="/scripts/modal.js"></script>
-</body>
+  </head>
+  <body>
+    <main class="container">
+      <section class="trademark">
+        <h1 class="title">Empresa Genérica</h1>
+        <p>Nós somos uma empresa genérica</p>
+        <p>Há nn anos somos a melhor em nossa área de atuação</p>
+      </section>
+      <form class="login-formulary">
+        <h2>Login</h2>
+        <input type="email" placeholder="E-mail" />
+        <input type="password" placeholder="Senha" />
+        <p  id="asignPassword">Esqueci a minha senha</p>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+    <div class="modal-wrapper">
+    <form class="modal">
+      <h3>Recuperar senha <span class="modal-close">X</span></h3>
+      <p>Digite o seu e-mail abaixo para cadastrar uma nova senha</p>
+      <input type="email" placeholder="E-mail" />
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+    <script src="../../scripts/modal.js"></script>
+  </body>
 </html>
